@@ -38,6 +38,12 @@ body {
     padding-left: clamp(1rem, 2.5vw, 2rem);
   }
 
+  .fluid-section {
+    padding-left: clamp(1rem, 2.5vw, 2rem);
+    padding-right: clamp(1rem, 2.5vw, 2rem);
+    width: 100%;
+  }
+
   .text-fluid-nav {
     font-size: clamp(1.125rem, 2vw, 1.5rem);
     letter-spacing: 0.02em;
@@ -46,5 +52,14 @@ body {
       font-size: clamp(0.813rem, 1vw, 1.125rem);
       letter-spacing: 0.02em;
     }
+  }
+
+  .text-fluid-footer {
+    font-size: clamp(0.875rem, 0.5vw + 0.75rem, 1rem);
+    line-height: 1.5;
+  }
+
+  .text-title-footer {
+    font-size: clamp(1.25rem, 1.5vw, 1.5rem);
   }
 }

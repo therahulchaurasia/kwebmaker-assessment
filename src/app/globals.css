@@ -62,4 +62,5 @@ body {
   .text-title-footer {
     font-size: clamp(1.25rem, 1.5vw, 1.5rem);
   }
+
 }

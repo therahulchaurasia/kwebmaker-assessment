@@ -162,6 +162,9 @@ function MasonryGrid() {
             fill
             className="object-cover hover:scale-110 transition-transform duration-700"
             sizes="(max-width: 1024px) 100vw, 50vw"
+            loading="lazy"
+            priority={false}
+            fetchPriority="low"
           />
           <div className="absolute inset-0 bg-black/5 opacity-0 hover:opacity-10 transition-opacity duration-300 pointer-events-none" />
         </div>
@@ -180,15 +183,15 @@ function TabButton({ label, isActive, onClick }: TabButtonProps) {
   return (
     <button
       className={cn(
-        "relative pb-[clamp(0.5rem,1vw,0.75rem)] fluid-about-heading transition-all duration-300 border-none cursor-pointer",
-        isActive ? "font-bold" : "text-gray-300 font-medium hover:text-black",
+        "relative pb-[clamp(0.5rem,1vw,0.75rem)] fluid-about-heading font-bold transition-all duration-300 border-none cursor-pointer",
+        isActive ? "" : "text-gray-300 hover:text-black",
       )}
       onClick={onClick}
     >
       {label}
       <span
         className={cn(
-          "absolute bottom-0 left-0 w-full h-0.75 bg-brand-lime transition-all duration-300",
+          "absolute bottom-0 left-0 w-full h-0.5 bg-brand-lime transition-all duration-300",
           isActive ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0",
         )}
       />

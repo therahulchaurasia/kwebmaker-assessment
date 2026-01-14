@@ -129,19 +129,19 @@ const PROFESSIONALS = [
     id: 1,
     name: "Craig Tiley",
     role: "CEO Tennis Australia & Australian Open",
-    src: "/assets/professional.webp",
+    src: "/assets/professional-one.webp",
   },
   {
     id: 2,
     name: "Stephen Farrow",
     role: "Director - Tournament, Players & International Relations",
-    src: "/assets/professional.webp",
+    src: "/assets/professional-two.webp",
   },
   {
     id: 3,
     name: "Cameron Pearson",
     role: "Head Major Events - Tennis Australia",
-    src: "/assets/professional.webp",
+    src: "/assets/professional-three.webp",
   },
 ]
 

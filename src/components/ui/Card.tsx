@@ -53,7 +53,7 @@ export default function Card({
             <div className="absolute bottom-0 left-0 w-full p-[clamp(1.5rem,2vw,2rem)] flex flex-col items-center text-center z-20 gap-3">
               <h3
                 className={cn(
-                  "font-bold text-white fluid-about-heading",
+                  "font-bold text-white fluid-heading-three",
                   titleClassName,
                 )}
               >
@@ -74,7 +74,7 @@ export default function Card({
 
       {variant === "stacked" && (
         <div className="flex flex-col items-start gap-3">
-          <h3 className={cn("font-bold  fluid-about-heading", titleClassName)}>
+          <h3 className={cn("font-bold  fluid-heading-three", titleClassName)}>
             {title}
           </h3>
           <p

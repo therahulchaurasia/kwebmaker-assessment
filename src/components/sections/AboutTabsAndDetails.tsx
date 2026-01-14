@@ -36,7 +36,7 @@ function Tabs({ activeTab, setActiveTab }: TabsProps) {
       </div>
 
       <div className="relative z-10 flex flex-col fluid-section-x items-center max-w-3xl gap-[clamp(2.5rem,4vw,3.5rem)]">
-        <h3 className="fluid-about-heading tracking-tight text-center ">
+        <h3 className="fluid-heading-three tracking-tight text-center ">
           To be the first venue in the world to have{" "}
           <span className="text-brand-lime font-bold">
             60 multi surface courts
@@ -100,7 +100,7 @@ function StatsMap() {
           key={stat.label}
           className="flex flex-col items-center lg:items-center text-center lg:text-left"
         >
-          <h3 className="fluid-about-heading font-bold text-brand-lime leading-none">
+          <h3 className="fluid-heading-three font-bold text-brand-lime leading-none">
             {stat.value}
           </h3>
           <span className="text-sm font-medium text-brand-navy mt-1 capitalize">
@@ -149,7 +149,7 @@ function TabButton({ label, isActive, onClick }: TabButtonProps) {
   return (
     <button
       className={cn(
-        "relative pb-[clamp(0.5rem,1vw,0.75rem)] fluid-about-heading font-bold transition-all duration-300 border-none cursor-pointer group",
+        "relative pb-[clamp(0.5rem,1vw,0.75rem)] fluid-heading-three font-bold transition-all duration-300 border-none cursor-pointer group",
         isActive ? "" : "text-gray-300 hover:text-black",
       )}
       onClick={onClick}

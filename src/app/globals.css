@@ -59,7 +59,7 @@ body {
     line-height: 1.1;
   }
 
-  .fluid-about-heading {
+  .fluid-heading-three {
     font-size: clamp(1.125rem, 2vw, 1.5rem);
     line-height: 1.4;
   }

@@ -118,7 +118,7 @@ function FacilityCard({ data, isEvenRow }: FacilityCardProps) {
       <div className="flex flex-col gap-3">
         <h3
           className={cn(
-            "font-bold fluid-about-heading text-black",
+            "font-bold fluid-heading-three text-black",
             isEvenRow ? "md:text-white" : "text-black",
           )}
         >

@@ -30,20 +30,20 @@ function Tabs({ activeTab, setActiveTab }: TabsProps) {
           alt="Decorative Vector"
           fill
           className="object-contain object-left opacity-60"
-					loading="lazy"
-					priority={false}
+          loading="lazy"
+          priority={false}
         />
       </div>
 
       <div className="relative z-10 flex flex-col fluid-section-x items-center max-w-3xl gap-[clamp(2.5rem,4vw,3.5rem)]">
-        <h2 className="fluid-about-heading tracking-tight text-center ">
+        <h3 className="fluid-about-heading tracking-tight text-center ">
           To be the first venue in the world to have{" "}
           <span className="text-brand-lime font-bold">
             60 multi surface courts
           </span>{" "}
           at one location and establish first one stop tennis academy in the
           Asia Pacific producing grand slam champions.
-        </h2>
+        </h3>
         <div className="w-full flex justify-center gap-[clamp(1rem,4vw,4rem)]">
           {TABS_ARR.map((tab) => (
             <TabButton
@@ -100,9 +100,9 @@ function StatsMap() {
           key={stat.label}
           className="flex flex-col items-center lg:items-center text-center lg:text-left"
         >
-          <span className="fluid-about-heading font-bold text-brand-lime leading-none">
+          <h3 className="fluid-about-heading font-bold text-brand-lime leading-none">
             {stat.value}
-          </span>
+          </h3>
           <span className="text-sm font-medium text-brand-navy mt-1 capitalize">
             {stat.label}
           </span>

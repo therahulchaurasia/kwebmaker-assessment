@@ -64,7 +64,7 @@ body {
     line-height: 1.4;
   }
 
-  .fluid-visionbanner-heading {
+  .fluid-visionbanner-title {
     font-size: clamp(1.25rem, 2.5vw, 2.188rem);
     line-height: 1.2;
   }
@@ -72,6 +72,11 @@ body {
   .fluid-visionbanner-subtext {
     font-size: clamp(1rem, 1.5vw, 1.25rem);
     line-height: 1.5;
+  }
+
+  .fluid-launches-title {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    line-height: 1.2;
   }
 
   .fluid-nav {

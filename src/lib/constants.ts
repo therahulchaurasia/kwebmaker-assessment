@@ -154,6 +154,16 @@ const MARQUEE_ITEMS = [
   "DELIVER",
 ]
 
+const LOCATIONS = [
+  { name: "Hunter Valley Golf And Country Club", distance: "220m" },
+  { name: "Rydges Resort Hunter Valley", distance: "550m" },
+  { name: "Cressnock Airport", distance: "1.7km" },
+  { name: "Cressnock CBD", distance: "7km" },
+  { name: "Nulkaba Public School", distance: "4.8km" },
+  { name: "Cressnock Hospital", distance: "7.3km" },
+  { name: "McDonalds, KFC, Oporto", distance: "7km" },
+]
+
 export {
   FEATURES,
   NAV_ITEMS,
@@ -167,4 +177,5 @@ export {
   PROGRAMS,
   PROFESSIONALS,
   MARQUEE_ITEMS,
+  LOCATIONS,
 }

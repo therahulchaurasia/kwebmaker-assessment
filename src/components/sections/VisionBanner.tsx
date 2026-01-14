@@ -16,7 +16,7 @@ export default function VisionBanner() {
 
       <div className="relative z-10 w-full flex justify-center items-center text-center md:items-start md:text-left">
         <div className="flex flex-col gap-[clamp(1.5rem,3vw,2rem)]  max-w-[clamp(30rem,60vw,80rem)]">
-          <h3 className="font-semibold  fluid-visionbanner-heading">
+          <h3 className="font-semibold  fluid-visionbanner-title">
             &ldquo;We have created an environment ideal for building craft. Our
             goal is to be recognized as the best tennis performance centre in
             the world.&rdquo;

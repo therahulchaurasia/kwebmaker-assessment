@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X } from "lucide-react" // 1. Import Lucide Icons
+import { Menu, X } from "lucide-react"
 import { NAV_ITEMS } from "@/lib/constants"
 import Button from "@/components/ui/Button"
 import { cn } from "@/lib/utils"

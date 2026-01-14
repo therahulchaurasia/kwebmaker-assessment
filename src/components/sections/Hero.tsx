@@ -1,5 +1,5 @@
 import { HeroBackground } from "@/components/ui/HeroBackground"
-import { ChevronDown, Move3D, MoveDown } from "lucide-react" // Icons for the widget
+import { MoveDown } from "lucide-react"
 import Link from "next/link"
 import Button from "../ui/Button"
 

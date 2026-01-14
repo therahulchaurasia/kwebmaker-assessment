@@ -1,7 +1,7 @@
-import { Phone, Mail, Facebook, Instagram, Youtube, X } from "lucide-react";
+import { Phone, Mail, Facebook, Instagram, Youtube, X } from "lucide-react"
 import { NavItem } from "@/types/index"
 
-export const NAV_ITEMS: NavItem[] = [
+const NAV_ITEMS: NavItem[] = [
   { label: "About Us", href: "/about" },
   { label: "Matches", href: "/matches" },
   { label: "Programs", href: "/programs" },
@@ -12,25 +12,105 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Blogs", href: "/blogs" },
 ]
 
+const ADDRESS = "30 Wills Hill Road, Lovedale, NSW"
 
-export const ADDRESS = "30 Wills Hill Road, Lovedale, NSW";
-
-export const CONTACT_LINKS = [
-  { 
-    label: "+ 91 5642589752", 
-    href: "tel:+915642589752", 
-    icon: Phone 
+const CONTACT_LINKS = [
+  {
+    label: "+ 91 5642589752",
+    href: "tel:+915642589752",
+    icon: Phone,
   },
-  { 
-    label: "info@ssagroup.com", 
-    href: "mailto:info@ssagroup.com", 
-    icon: Mail 
-  }
-];
+  {
+    label: "info@ssagroup.com",
+    href: "mailto:info@ssagroup.com",
+    icon: Mail,
+  },
+]
 
-export const SOCIAL_LINKS = [
+const SOCIAL_LINKS = [
   { href: "https://facebook.com", icon: Facebook, label: "Facebook" },
   { href: "https://x.com", icon: X, label: "X" },
   { href: "https://instagram.com", icon: Instagram, label: "Instagram" },
   { href: "https://youtube.com", icon: Youtube, label: "YouTube" },
-];
+]
+
+const FEATURES = [
+  "First venue in the world",
+  "First venue in the world",
+  "First venue in the world to have 60 multi surface courts (20 clay & 30 hard + 10 natural grass) at one location alongside a stadium",
+  "First venue in the world to have 60 multi surface courts (20 clay & 30 hard + 10 natural grass) at one location alongside a stadium",
+  "First facility in the world to have capabilities to hold WTA & ATP events on any three court surface at one location",
+  "First facility in the world to have capabilities to hold WTA & ATP events on any three court surface at one location",
+  "First tennis academy in the world to have capabilities to stage WTA & ATP events too",
+  "First tennis academy in the world to have capabilities to stage WTA & ATP events too",
+  "First venue in the world with tennis academy, Equestrian Centre, 18 holes golf course, Exhibition Centre, Aboriginal Art & Culture Museum, Stadium, 5 Star Hunter Valley resort and airport all in 500 meters radius",
+  "First venue in the world with tennis academy, Equestrian Centre, 18 holes golf course, Exhibition Centre, Aboriginal Art & Culture Museum, Stadium, 5 Star Hunter Valley resort and airport all in 500 meters radius",
+  "First one stop tennis academy in Asia Pacific",
+  "First one stop tennis academy in Asia Pacific",
+]
+
+const TABS_ARR = ["About Us", "Coaches", "Vision", "Mission"]
+
+const STATS = [
+  { value: "20", label: "courts" },
+  { value: "12", label: "coaches" },
+  { value: "17", label: "years" },
+  { value: "10", label: "clubs" },
+]
+
+const ABOUT_IMAGES = [
+  {
+    id: 1,
+    src: "/assets/masonry-grid/item-one.png",
+    alt: "Coaches High Five",
+    className: "col-span-7",
+  },
+  {
+    id: 2,
+    src: "/assets/masonry-grid/item-two.png",
+    alt: "Kids Training",
+    className: "col-span-5",
+  },
+  {
+    id: 3,
+    src: "/assets/masonry-grid/item-three.png",
+    alt: "Man Playing Tennis",
+    className: "col-span-6",
+  },
+  {
+    id: 4,
+    src: "/assets/masonry-grid/item-four.png",
+    alt: "Woman Playing Tennis",
+    className: "col-span-6",
+  },
+]
+
+const GLIMPSE_ITEMS = [
+  {
+    id: 1,
+    src: "/assets/player-exc.webp",
+    alt: "Tennis Player",
+
+    className: "col-span-12 md:col-span-5",
+    imageClassName: "grayscale-75",
+  },
+  {
+    id: 2,
+    src: "/assets/court-exc.webp",
+    alt: "Tennis Courts Aerial",
+    className: "col-span-12 md:col-span-7",
+    imageClassName: "",
+  },
+]
+
+export {
+  FEATURES,
+  NAV_ITEMS,
+  ADDRESS,
+  CONTACT_LINKS,
+  SOCIAL_LINKS,
+  TABS_ARR,
+  STATS,
+  ABOUT_IMAGES,
+  GLIMPSE_ITEMS,
+}

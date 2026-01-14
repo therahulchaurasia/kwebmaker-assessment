@@ -1,10 +1,9 @@
 import {
-  ADDRESS,
-  CONTACT_LINKS,
-  NAV_ITEMS,
-  SOCIAL_LINKS,
+	ADDRESS,
+	CONTACT_LINKS,
+	NAV_ITEMS,
+	SOCIAL_LINKS,
 } from "@/lib/constants"
-import { Facebook, Instagram, X, Youtube } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 

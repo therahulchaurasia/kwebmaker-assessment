@@ -4,42 +4,7 @@ import Image from "next/image"
 import { SectionHeading } from "@/components/ui/SectionHeading"
 import Button from "@/components/ui/Button"
 import { useState } from "react"
-
-const TabsArr = ["About Us", "Coaches", "Vision", "Mission"]
-
-const STATS = [
-  { value: "20", label: "courts" },
-  { value: "12", label: "coaches" },
-  { value: "17", label: "years" },
-  { value: "10", label: "clubs" },
-]
-
-const ABOUT_IMAGES = [
-  {
-    id: 1,
-    src: "/assets/masonry-grid/item-one.png",
-    alt: "Coaches High Five",
-    className: "col-span-7",
-  },
-  {
-    id: 2,
-    src: "/assets/masonry-grid/item-two.png",
-    alt: "Kids Training",
-    className: "col-span-5",
-  },
-  {
-    id: 3,
-    src: "/assets/masonry-grid/item-three.png",
-    alt: "Man Playing Tennis",
-    className: "col-span-6",
-  },
-  {
-    id: 4,
-    src: "/assets/masonry-grid/item-four.png",
-    alt: "Woman Playing Tennis",
-    className: "col-span-6",
-  },
-]
+import { ABOUT_IMAGES, STATS, TABS_ARR } from "@/lib/constants"
 
 export default function AboutTabsAndDetails() {
   const [activeTab, setActiveTab] = useState("About Us")
@@ -78,7 +43,7 @@ function Tabs({ activeTab, setActiveTab }: TabsProps) {
           Asia Pacific producing grand slam champions.
         </h2>
         <div className="w-full flex justify-center gap-[clamp(1rem,4vw,4rem)]">
-          {TabsArr.map((tab) => (
+          {TABS_ARR.map((tab) => (
             <TabButton
               key={tab}
               label={tab}
@@ -160,7 +125,7 @@ function MasonryGrid() {
             src={img.src}
             alt={img.alt}
             fill
-            className="object-cover hover:scale-110 transition-transform duration-700"
+            className="object-cover hover:scale-110 transition-transform duration-700 rounded-lg"
             sizes="(max-width: 1024px) 100vw, 50vw"
             loading="lazy"
             priority={false}

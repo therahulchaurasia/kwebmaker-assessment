@@ -50,7 +50,7 @@ const LinksSection = () => {
           >
             <Link
               href={item.href}
-              className="text-fluid-footer group relative text-center text-brand-navy hover:text-brand-lime transition-colors font-medium"
+              className="fluid-footer-subtext group relative text-center text-brand-navy hover:text-brand-lime transition-colors font-medium"
             >
               {item.label}
               <span className="absolute left-0 -bottom-1 h-px w-0 bg-brand-lime hover:bg-brand-lime transition-all duration-300 group-hover:w-full"></span>
@@ -68,12 +68,12 @@ const LinksSectionHalf = () => {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center  md:items-start md:justify-start lg:items-start gap-[clamp(2.5rem,6vw,6rem)]">
       <div className="flex flex-col text-center md:text-start items-center gap-[clamp(1.5rem,1.5vw,1.5rem)]">
-        <h3 className="text-title-footer font-bold text-brand-lime inline-block pb-[clamp(0.25rem,0.5vw,0.5rem)] w-fit">
+        <h3 className="fluid-footer-title font-bold text-brand-lime inline-block pb-[clamp(0.25rem,0.5vw,0.5rem)] w-fit">
           Signature Slam Academy
         </h3>
 
         <address className="not-italic flex flex-col gap-[clamp(1rem,2vw,1.5rem)] text-brand-navy">
-          <p className="text-fluid-footer font-medium">{ADDRESS}</p>
+          <p className="fluid-footer-subtext font-medium">{ADDRESS}</p>
           {CONTACT_LINKS.map(({ label, href, icon: Icon }) => (
             <Link
               key={label}
@@ -81,7 +81,7 @@ const LinksSectionHalf = () => {
               className="flex justify-center md:justify-start gap-[clamp(0.75rem,1vw,1rem)] hover:text-brand-lime transition-colors group"
             >
               <Icon className="hidden md:block w-[clamp(1.25rem,1.5vw,1.5rem)] h-[clamp(1.25rem,1.5vw,1.5rem)] text-brand-lime  transition-transform group-hover:scale-110" />
-              <span className="text-fluid-footer font-medium">{label}</span>
+              <span className="fluid-footer-subtext font-medium">{label}</span>
             </Link>
           ))}
         </address>
@@ -97,7 +97,7 @@ const LinksSectionHalf = () => {
         </div>
       </div>
       <div className="hidden md:flex  flex-col gap-[clamp(1.5rem,1.5vw,1.5rem)]">
-        <h4 className="block text-title-footer font-bold text-brand-lime">
+        <h4 className="block fluid-footer-title font-bold text-brand-lime">
           Connect with us
         </h4>
 
@@ -118,7 +118,7 @@ const LinksSectionHalf = () => {
 
 const LowerHalf = () => {
   return (
-    <div className="relative w-full text-white py-[clamp(0.688rem,0.5vw,1rem)] fluid-section flex flex-col md:flex-row items-center justify-between font-medium bg-gradient-brand gap-[clamp(0.5rem,1vw,1rem)] text-fluid-footer">
+    <div className="relative w-full text-white py-[clamp(0.688rem,0.5vw,1rem)] fluid-section flex flex-col md:flex-row items-center justify-between font-medium bg-gradient-brand gap-[clamp(0.5rem,1vw,1rem)] fluid-footer-subtext">
       <div className="w-full md:w-1/3 flex justify-center md:justify-start">
         <Link href="/terms" className="hover:underline ">
           Terms And Conditions

@@ -11,7 +11,7 @@ function Button({ className, children, ...btnProps }: ButtonProps) {
   return (
     <button
       className={cn(
-        "text-fluid-nav border border-brand-lime rounded-full hover:bg-brand-lime hover:text-white transition-all duration-300 font-bold cursor-pointer px-[clamp(1.5rem,2.5vw,3rem)] py-[clamp(0.625rem,0.5vw,0.75rem)]",
+        "fluid-nav border border-brand-lime rounded-full hover:bg-brand-lime hover:text-white transition-all duration-300 font-bold cursor-pointer px-[clamp(1.5rem,2.5vw,3rem)] py-[clamp(0.625rem,0.5vw,0.75rem)]",
         className,
       )}
       {...btnProps}

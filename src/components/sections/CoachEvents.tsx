@@ -72,7 +72,11 @@ function BannerCard({
     >
       {children}
       <div className="relative z-10 p-[clamp(2rem,5vw,4rem)] flex flex-col gap-[clamp(1rem,1.5vw,1.5rem)] items-start">
-        <SectionHeading title={title} variant="white" />{" "}
+        <SectionHeading
+          title={title}
+          textclassName="text-white"
+          dotclassName="text-white bg-white"
+        />
         <p className="text-fluid-body text-gray-100 max-w-lg">{description}</p>
         <ArrowLink href={href} label="Read More" variant="light" />
       </div>

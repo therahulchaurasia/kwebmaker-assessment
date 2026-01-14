@@ -37,7 +37,9 @@ export default function Header() {
           <DesktopLinks />
           <div className="flex items-center gap-[1.5vw] z-50">
             <div className="hidden md:block">
-              <Button className="py-[clamp(0.625rem,0.5vw,0.75rem)]">Join Club</Button>
+              <Button className="py-[clamp(0.625rem,0.5vw,0.75rem)]">
+                Join Club
+              </Button>
             </div>
             <Button
               className="md:hidden border-none p-1 transition-colors focus:outline-none cursor-pointer"
@@ -67,7 +69,7 @@ export default function Header() {
                 href={item.href}
                 onClick={() => setIsOpen(false)}
                 className={cn(
-                  "text-fluid-nav font-bold text-brand-navy hover:text-brand-lime transition-colors",
+                  "fluid-nav font-bold text-brand-navy hover:text-brand-lime transition-colors",
                   "transform transition-all duration-500 ",
                 )}
                 // style={{
@@ -116,7 +118,7 @@ const DesktopLinks = () => {
         <Link
           key={item.href}
           href={item.href}
-          className="group relative text-fluid-nav hover:text-brand-lime transition-colors duration-200"
+          className="group relative fluid-nav hover:text-brand-lime transition-colors duration-200"
         >
           {item.label}
           <span className="absolute left-0 -bottom-1 h-px w-0 bg-brand-lime hover:bg-brand-lime transition-all duration-300 group-hover:w-full"></span>

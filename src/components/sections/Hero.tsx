@@ -31,7 +31,7 @@ const HeroHeadingAndSubheading = () => {
           SSA Hunter Valley
         </span>
       </div>
-      <h1 className="text-fluid-hero-title font-light uppercase drop-shadow-lg tracking-wide">
+      <h1 className="fluid-hero-title font-light uppercase drop-shadow-lg tracking-wide">
         Grow Your Game With The <br />
         <span className="inline-block font-extrabold border-b-2 border-white pt-[clamp(0.25rem,0.5vw,0.75rem)] pb-[clamp(0.75rem,0.6vw,1.1rem)]">
           Professionals
@@ -60,7 +60,7 @@ const CTABtn = () => {
   return (
     <div>
       <Link href="/register" tabIndex={-1}>
-        <Button className="text-fluid-footer font-light ">
+        <Button className="fluid-footer-subtext font-light ">
           Register Now
         </Button>
       </Link>

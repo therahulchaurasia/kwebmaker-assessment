@@ -1,8 +1,8 @@
 import {
-	ADDRESS,
-	CONTACT_LINKS,
-	NAV_ITEMS,
-	SOCIAL_LINKS,
+  ADDRESS,
+  CONTACT_LINKS,
+  NAV_ITEMS,
+  SOCIAL_LINKS,
 } from "@/lib/constants"
 import Image from "next/image"
 import Link from "next/link"
@@ -31,7 +31,7 @@ const Logo = () => {
           fill
           className="object-contain"
           priority={false}
-					loading="lazy"
+          loading="lazy"
         />
       </div>
     </div>
@@ -144,6 +144,7 @@ function SocialIcon({ href, icon }: { href: string; icon: React.ReactNode }) {
   return (
     <Link
       href={href}
+      target="_blank"
       className="text-brand-navy hover:text-brand-lime transition-colors transform hover:scale-110 duration-200"
     >
       {icon}

@@ -149,7 +149,7 @@ function TabButton({ label, isActive, onClick }: TabButtonProps) {
   return (
     <button
       className={cn(
-        "relative pb-[clamp(0.5rem,1vw,0.75rem)] fluid-about-heading font-bold transition-all duration-300 border-none cursor-pointer",
+        "relative pb-[clamp(0.5rem,1vw,0.75rem)] fluid-about-heading font-bold transition-all duration-300 border-none cursor-pointer group",
         isActive ? "" : "text-gray-300 hover:text-black",
       )}
       onClick={onClick}
@@ -161,6 +161,7 @@ function TabButton({ label, isActive, onClick }: TabButtonProps) {
           isActive ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0",
         )}
       />
+      <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-brand-lime hover:bg-brand-lime transition-all duration-300 group-hover:w-full"></span>
     </button>
   )
 }

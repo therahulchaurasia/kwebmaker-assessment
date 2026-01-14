@@ -11,7 +11,7 @@ import Link from "next/link"
 export default function Footer() {
   return (
     <footer className="w-full bg-white pt-[clamp(3rem,5vw,5rem)] flex flex-col">
-      <div className="fluid-section w-full max-w-screen mx-auto pb-[clamp(2rem,4vw,3rem)]">
+      <div className="fluid-section-x w-full max-w-screen mx-auto pb-[clamp(2rem,4vw,3rem)]">
         <div className="grid grid-cols-1 md:grid-cols-[3fr_9fr] gap-x-[clamp(2rem,4vw,5rem)] gap-y-[clamp(1rem,4vw,3rem)]">
           <Logo />
           <LinksSection />
@@ -118,7 +118,7 @@ const LinksSectionHalf = () => {
 
 const LowerHalf = () => {
   return (
-    <div className="relative w-full text-white py-[clamp(0.688rem,0.5vw,1rem)] fluid-section flex flex-col md:flex-row items-center justify-between font-medium bg-gradient-brand gap-[clamp(0.5rem,1vw,1rem)] fluid-footer-subtext">
+    <div className="relative w-full text-white py-[clamp(0.688rem,0.5vw,1rem)] fluid-section-x flex flex-col md:flex-row items-center justify-between font-medium bg-gradient-brand gap-[clamp(0.5rem,1vw,1rem)] fluid-footer-subtext">
       <div className="w-full md:w-1/3 flex justify-center md:justify-start">
         <Link href="/terms" className="hover:underline ">
           Terms And Conditions

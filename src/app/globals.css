@@ -38,10 +38,15 @@ body {
     padding-left: clamp(1rem, 2.5vw, 2rem);
   }
 
-  .fluid-section {
+  .fluid-section-x {
     padding-left: clamp(1rem, 2.5vw, 2rem);
     padding-right: clamp(1rem, 2.5vw, 2rem);
     width: 100%;
+  }
+
+  .fluid-section-y {
+    padding-top: clamp(3rem, 5vw, 4.5rem);
+    padding-bottom: clamp(3rem, 5vw, 4.5rem);
   }
 
   .fluid-hero-title {

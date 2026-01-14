@@ -44,10 +44,10 @@ const ABOUT_IMAGES = [
 export default function AboutTabsAndDetails() {
   const [activeTab, setActiveTab] = useState("About Us")
   return (
-    <>
+    <div className="fluid-section-y">
       <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
       <DetailsAndImages activeTab={activeTab} />
-    </>
+    </div>
   )
 }
 
@@ -58,7 +58,7 @@ type TabsProps = {
 
 function Tabs({ activeTab, setActiveTab }: TabsProps) {
   return (
-    <section className="relative w-full bg-white mt-[clamp(2rem,8vw,4rem)] pt-[clamp(0.75rem,1.5vw,2rem)] pb-[clamp(3rem,5vw,4.5rem)] flex flex-col items-center overflow-hidden">
+    <section className="relative w-full bg-white pb-[clamp(3rem,5vw,4.5rem)] flex flex-col items-center overflow-hidden">
       <div className="absolute top-0 left-0  w-full h-full opacity-50 pointer-events-none select-none">
         <Image
           src="/assets/vector.svg"
@@ -68,7 +68,7 @@ function Tabs({ activeTab, setActiveTab }: TabsProps) {
         />
       </div>
 
-      <div className="fluid-section relative z-10 flex flex-col items-center max-w-3xl gap-[clamp(2.5rem,4vw,3.5rem)]">
+      <div className="fluid-section-x relative z-10 flex flex-col items-center max-w-3xl gap-[clamp(2.5rem,4vw,3.5rem)]">
         <h2 className="fluid-about-heading tracking-tight text-center ">
           To be the first venue in the world to have{" "}
           <span className="text-brand-lime font-bold">
@@ -98,7 +98,7 @@ type DetailsAndImagesProps = {
 
 function DetailsAndImages({ activeTab }: DetailsAndImagesProps) {
   return (
-    <section className="w-full fluid-section pb-[clamp(3rem,5vw,5rem)]">
+    <section className="w-full fluid-section-x">
       <div className="flex flex-col-reverse md:flex-row items-center gap-[clamp(1rem,5vw,5rem)]">
         <div className="w-full md:w-1/2 flex flex-col items-center ">
           <div className="w-fit flex flex-col items-center md:items-start gap-[clamp(1rem,1.5vw,1.5rem)]">

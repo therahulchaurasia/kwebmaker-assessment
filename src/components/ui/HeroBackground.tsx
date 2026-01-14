@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 
 export function HeroBackground() {
   return (
@@ -12,17 +12,17 @@ export function HeroBackground() {
           className="object-cover opacity-100"
         />
       </div>
-     <video
-  autoPlay
-  loop
-  muted
-  playsInline
-  className="absolute inset-0 w-full h-full object-cover z-10 opacity-100" 
->
-  <source src="/assets/hero-bg.webm" type="video/webm" />
-  <source src="/assets/hero-bg.mp4" type="video/mp4" />
-</video>
-<div className="absolute inset-0 z-20 bg-black/40" />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-10 opacity-100"
+      >
+        <source src="/assets/hero-bg.webm" type="video/webm" />
+        <source src="/assets/hero-bg.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 z-20 bg-black/40" />
     </div>
-  );
+  )
 }

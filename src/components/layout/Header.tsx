@@ -37,9 +37,7 @@ export default function Header() {
           <DesktopLinks />
           <div className="flex items-center gap-[1.5vw] z-50">
             <div className="hidden md:block">
-              <Button className="w-[clamp(6.25rem,9.44vw,9.5rem)] h-[clamp(2rem,2.57vw,2.5rem)]">
-                Join Club
-              </Button>
+              <Button className="py-[clamp(0.625rem,0.5vw,0.75rem)]">Join Club</Button>
             </div>
             <Button
               className="md:hidden border-none p-1 transition-colors focus:outline-none cursor-pointer"
@@ -83,9 +81,7 @@ export default function Header() {
             ))}
           </nav>
           <div className="mt-auto">
-            <Button className="h-[clamp(2.5rem,4.29vw,3rem)] w-full">
-              Join Club
-            </Button>
+            <Button className="w-full">Join Club</Button>
           </div>
         </div>
       </div>
@@ -106,6 +102,7 @@ const Logo = () => {
           fill
           className="object-cover object-left"
           priority
+          fetchPriority="high"
         />
       </div>
     </Link>

@@ -13,9 +13,11 @@ export default function CoachEvents() {
       <BannerCard title="Coaches" description={DUMMY_DESC} href="/coaches">
         <>
           <Image
-            src="/assets/coach.jpeg"
+            src="/assets/coach.webp"
             alt="Tennis Coach"
             fill
+            loading="lazy"
+            priority={false}
             className="object-cover transition-transform duration-700 pointer-events-none"
           />
           <div
@@ -35,6 +37,8 @@ export default function CoachEvents() {
           <Image
             src="/assets/tennis-silhouette.png"
             alt="Player Silhouette"
+            loading="lazy"
+            priority={false}
             fill
             className="z-50 object-contain object-bottom right-0"
           />

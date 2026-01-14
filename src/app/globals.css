@@ -92,4 +92,22 @@ body {
     font-size: clamp(0.875rem, 0.5vw + 0.75rem, 1rem);
     line-height: 1.5;
   }
+
+  .text-stroke-lime {
+    -webkit-text-stroke: 1px var(--color-brand-lime);
+    color: transparent;
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
 }

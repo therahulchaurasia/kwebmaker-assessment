@@ -145,6 +145,15 @@ const PROFESSIONALS = [
   },
 ]
 
+const MARQUEE_ITEMS = [
+  "ADOPT",
+  "NURTURE",
+  "DELIVER",
+  "ADOPT",
+  "NURTURE",
+  "DELIVER",
+]
+
 export {
   FEATURES,
   NAV_ITEMS,
@@ -157,4 +166,5 @@ export {
   GLIMPSE_ITEMS,
   PROGRAMS,
   PROFESSIONALS,
+  MARQUEE_ITEMS,
 }

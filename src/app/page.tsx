@@ -5,6 +5,7 @@ import Hero from "@/components/sections/Hero"
 import Professionals from "@/components/sections/Professionals"
 import Programs from "@/components/sections/Programs"
 import VisionBanner from "@/components/sections/VisionBanner"
+import Marquee from "@/components/ui/Marquee"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <VisionBanner />
       <FeaturesAndGlimpse />
       <Programs />
+      <Marquee />
       <Professionals />
       <CoachEvents />
     </>

@@ -14,8 +14,8 @@ function FeaturesAndGlimpse({}: Props) {
           src="/assets/wireframe.svg"
           alt="Wireframe Background"
           fill
-          priority={false}
           loading="lazy"
+          priority={false}
           className="object-cover object-left opacity-70"
         />
 
@@ -51,7 +51,7 @@ function KeyFeatures() {
 function GlimpseSection() {
   return (
     <section className="relative overflow-hidden w-full fluid-section-y fluid-section-x">
-      <div className="fluid-section relative z-10 w-full flex flex-col gap-[clamp(3rem,5vw,4rem)]">
+      <div className="relative z-10 w-full flex flex-col gap-[clamp(3rem,5vw,3.5rem)]">
         <SectionHeader
           headingText="A Glimpse of Excellence"
           btnText="Register Now"
@@ -70,6 +70,8 @@ function GlimpseSection() {
                 src={item.src}
                 alt={item.alt}
                 fill
+                loading="lazy"
+                priority={false}
                 className={cn(
                   "object-cover transition-transform duration-700 rounded-lg group-hover:scale-105",
                   item.imageClassName,

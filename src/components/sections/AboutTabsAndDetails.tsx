@@ -30,6 +30,8 @@ function Tabs({ activeTab, setActiveTab }: TabsProps) {
           alt="Decorative Vector"
           fill
           className="object-contain object-left opacity-60"
+					loading="lazy"
+					priority={false}
         />
       </div>
 
@@ -129,7 +131,6 @@ function MasonryGrid() {
             sizes="(max-width: 1024px) 100vw, 50vw"
             loading="lazy"
             priority={false}
-            fetchPriority="low"
           />
           <div className="absolute inset-0 bg-black/5 opacity-0 hover:opacity-10 transition-opacity duration-300 pointer-events-none" />
         </div>

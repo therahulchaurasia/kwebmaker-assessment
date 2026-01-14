@@ -103,6 +103,48 @@ const GLIMPSE_ITEMS = [
   },
 ]
 
+const PROGRAMS = [
+  {
+    id: 1,
+    title: "Academy",
+    subtitle: "Live and train with us",
+    src: "/assets/field.webp",
+  },
+  {
+    id: 2,
+    title: "Camps",
+    subtitle: "Train like a pro with us",
+    src: "/assets/coach.webp",
+  },
+  {
+    id: 3,
+    title: "Performance",
+    subtitle: "Elevate your game with us",
+    src: "/assets/player-exc.webp",
+  },
+]
+
+const PROFESSIONALS = [
+  {
+    id: 1,
+    name: "Craig Tiley",
+    role: "CEO Tennis Australia & Australian Open",
+    src: "/assets/professional.webp",
+  },
+  {
+    id: 2,
+    name: "Stephen Farrow",
+    role: "Director - Tournament, Players & International Relations",
+    src: "/assets/professional.webp",
+  },
+  {
+    id: 3,
+    name: "Cameron Pearson",
+    role: "Head Major Events - Tennis Australia",
+    src: "/assets/professional.webp",
+  },
+]
+
 export {
   FEATURES,
   NAV_ITEMS,
@@ -113,4 +155,6 @@ export {
   STATS,
   ABOUT_IMAGES,
   GLIMPSE_ITEMS,
+  PROGRAMS,
+  PROFESSIONALS,
 }

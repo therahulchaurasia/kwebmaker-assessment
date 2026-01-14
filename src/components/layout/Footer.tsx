@@ -30,7 +30,8 @@ const Logo = () => {
           alt="SSA Logo"
           fill
           className="object-contain"
-          priority
+          priority={false}
+					loading="lazy"
         />
       </div>
     </div>

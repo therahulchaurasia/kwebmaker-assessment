@@ -8,6 +8,8 @@ export default function VisionBanner() {
           src="/assets/section-bg.webp"
           alt="Background Pattern"
           fill
+          loading="lazy"
+          priority={false}
           className="object-cover opacity-60"
         />
       </div>

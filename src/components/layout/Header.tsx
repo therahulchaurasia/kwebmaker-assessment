@@ -103,6 +103,7 @@ const Logo = () => {
           alt="SSA Hunter Valley"
           fill
           className="object-cover object-left"
+          loading="eager"
           priority
           fetchPriority="high"
         />

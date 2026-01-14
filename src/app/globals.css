@@ -45,8 +45,8 @@ body {
   }
 
   .fluid-section-y {
-    padding-top: clamp(3rem, 5vw, 4.5rem);
-    padding-bottom: clamp(3rem, 5vw, 4.5rem);
+    padding-top: clamp(3rem, 5vw, 4rem);
+    padding-bottom: clamp(3rem, 5vw, 4rem);
   }
 
   .fluid-hero-title {

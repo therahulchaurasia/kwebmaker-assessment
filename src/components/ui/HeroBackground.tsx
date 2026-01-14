@@ -8,7 +8,9 @@ export function HeroBackground() {
           src="/assets/hero/hero-poster.jpg"
           alt="Background Texture"
           fill
-          priority
+          priority={true}
+          fetchPriority="high"
+          loading="eager"
           className="object-cover opacity-100"
         />
       </div>

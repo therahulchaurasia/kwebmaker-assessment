@@ -2,6 +2,7 @@ import Image from "next/image"
 import { SectionHeading } from "@/components/ui/SectionHeading"
 import Button from "@/components/ui/Button"
 import { ArrowRight } from "lucide-react"
+import SectionHeader from "../ui/SectionHeader"
 
 const FEATURES = [
   "First venue in the world",
@@ -32,23 +33,7 @@ export default function KeyFeatures() {
         <div className="absolute inset-0 bg-linear-to-r from-white via-white/50 to-white opacity-80" />
       </div>
       <div className="fluid-section relative z-10 w-full flex flex-col gap-[clamp(3rem,5vw,3.5rem)]">
-        <div className="flex flex-col md:flex-row justify-between gap-6">
-          <div className="flex flex-col items-start gap-4 max-w-2xl">
-            <SectionHeading
-              title="Key Features"
-              textclassName="text-black font-black"
-              dotclassName="bg-brand-lime"
-            />
-            <p className=" fluid-paragraph">
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s.
-            </p>
-          </div>
-
-          <Button className="justify-self-start self-start bg-brand-lime text-white hover:bg-brand-navy hover:text-white transition-colors rounded-full font-semibold">
-            Register Now
-          </Button>
-        </div>
+        <SectionHeader headingText="Key Features" btnText="Register Now" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[clamp(2rem,4vw,5rem)] gap-y-[clamp(1.5rem,2.5vw,2.5rem)]">
           {FEATURES.map((feature, index) => (

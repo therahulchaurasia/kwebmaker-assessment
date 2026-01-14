@@ -41,7 +41,7 @@ export default function Card({
           priority={false}
           fetchPriority="low"
           className={cn(
-            "object-cover object-center transition-transform duration-700 group-hover:scale-105",
+            "object-cover object-top transition-transform duration-700 group-hover:scale-105",
             imageClassName,
           )}
           sizes="(max-width: 768px) 100vw, 33vw"

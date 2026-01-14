@@ -46,11 +46,17 @@ const AdoptNurtureDeliver = () => {
     <div className="w-full relative py-[clamp(0.5rem,1vw,0.75rem)]  flex justify-center items-center">
       <div className="absolute inset-0 bg-linear-to-r from-[#CDED4E00] via-[#D2F24F] to-[#D2F24F/10] opacity-60 max-w-[clamp(35rem,50vw,40rem)] mx-auto" />
       <div className="relative z-10 flex items-center gap-[clamp(0.875rem,1.3vw,1.5rem)] text-fluid-widget font-light uppercase text-white shadow-black drop-shadow-md">
-        <span className="tracking-[0.4em] mr-[-0.4em]">Adopt</span>
+        <span className="tracking-[clamp(0.2em,1vw,0.4em)] mr-[-0.4em]">
+          Adopt
+        </span>
         <span className="w-2 h-2 rounded-full bg-white" />
-        <span className="tracking-[0.4em] mr-[-0.4em]">Nurture</span>
+        <span className="tracking-[clamp(0.2em,1vw,0.4em)] mr-[-0.4em]">
+          Nurture
+        </span>
         <span className="w-2 h-2 rounded-full bg-white" />
-        <span className="tracking-[0.4em] mr-[-0.4em]">Deliver</span>
+        <span className="tracking-[clamp(0.2em,1vw,0.4em)] mr-[-0.4em]">
+          Deliver
+        </span>
       </div>
     </div>
   )

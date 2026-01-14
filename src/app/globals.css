@@ -39,8 +39,8 @@ body {
   }
 
   .fluid-section-x {
-    padding-left: clamp(1rem, 2.5vw, 2rem);
-    padding-right: clamp(1rem, 2.5vw, 2rem);
+    padding-left: clamp(2rem, 4vw, 5rem);
+    padding-right: clamp(2rem, 4vw, 5rem);
     width: 100%;
   }
 

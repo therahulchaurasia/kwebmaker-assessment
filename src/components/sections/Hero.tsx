@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative w-full h-dvh overflow-hidden">
       <HeroBackground />
 
-      <div className="relative z-10 w-full h-full flex flex-col justify-center items-center text-white fluid-section-x">
+      <div className="relative z-10 w-full h-full flex flex-col justify-center items-center text-white ">
         <div className="flex flex-col items-center text-center gap-8 w-full max-w-4xl mx-auto">
           <HeroHeadingAndSubheading />
           <AdoptNurtureDeliver />

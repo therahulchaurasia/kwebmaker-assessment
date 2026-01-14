@@ -68,7 +68,7 @@ function Tabs({ activeTab, setActiveTab }: TabsProps) {
         />
       </div>
 
-      <div className="fluid-section-x relative z-10 flex flex-col items-center max-w-3xl gap-[clamp(2.5rem,4vw,3.5rem)]">
+      <div className="relative z-10 flex flex-col fluid-section-x items-center max-w-3xl gap-[clamp(2.5rem,4vw,3.5rem)]">
         <h2 className="fluid-about-heading tracking-tight text-center ">
           To be the first venue in the world to have{" "}
           <span className="text-brand-lime font-bold">
@@ -98,10 +98,10 @@ type DetailsAndImagesProps = {
 
 function DetailsAndImages({ activeTab }: DetailsAndImagesProps) {
   return (
-    <section className="w-full fluid-section-x">
+    <section className="w-full px-[clamp(2rem,4vw,5rem)]">
       <div className="flex flex-col-reverse md:flex-row items-center gap-[clamp(1rem,5vw,5rem)]">
-        <div className="w-full md:w-1/2 flex flex-col items-center ">
-          <div className="w-fit flex flex-col items-center md:items-start gap-[clamp(1rem,1.5vw,1.5rem)]">
+        <div className="w-full md:w-1/2 flex flex-col items-center">
+          <div className="flex flex-col items-center md:items-start gap-[clamp(1rem,1.5vw,1.5rem)]">
             <SectionHeading
               title={activeTab || "About Us"}
               className="hidden md:block"
